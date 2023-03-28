@@ -104,6 +104,7 @@ while P.hp or M.hp > 0:
     print("""
 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
           """)
+    print("<플레이어와 몬스터 상태창>\n")
     ment1(P.show_status(M))
     print("""
 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓
@@ -119,6 +120,7 @@ while P.hp or M.hp > 0:
             continue
     else:
         ment1(print("잘못 입력하셨습니다."))
+        continue
 
     if P.hp == 0:
         ment1(print(f"플레이어 {P.name}의 체력이 0 이 되었다.\n 세히몬의 승리!"))
